@@ -44,7 +44,7 @@ const actions = {
 
       return data.data.data;
     } catch (error) {
-      console.log(error);
+      throw new Error(error);
     }
   },
   async fetchMealDetails(state, { id }) {
@@ -55,7 +55,6 @@ const actions = {
         }
       });
 
-      console.log(data.data);
       return data.data.data;
     } catch (error) {
       throw new Error(error);

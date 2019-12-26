@@ -76,16 +76,16 @@ export default {
   data() {
     return {
       meal: {}
-    }
+    };
   },
   async created() {
     try {
-      await this.$store.dispatch('loading')
-      this.meal = await this.$store.dispatch('fetchMealDetails', { id: this.$route.params.id })
-      await this.$store.dispatch('loading')
+      await this.$store.dispatch('loading');
+      this.meal = await this.$store.dispatch('fetchMealDetails', { id: this.$route.params.id });
+      await this.$store.dispatch('loading');
     } catch (error) {
-      console.log(error)
+      throw new Error(error);
     }
   }
-}
+};
 </script>

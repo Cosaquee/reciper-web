@@ -22,7 +22,7 @@ export default {
       const data = await this.$store.dispatch('fetchMeals', { type: this.mealName });
       this.meals = data;
     } catch (error) {
-      console.log(error);
+      throw new Error(error);
     }
   }
 };

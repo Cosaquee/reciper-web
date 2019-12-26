@@ -61,7 +61,7 @@ export default {
         this.$store.dispatch('loading');
         this.$router.push('/breakfast');
       } catch (error) {
-        console.log(error);
+        throw new Error(error);
       }
     }
   }
