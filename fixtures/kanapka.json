@@ -1,0 +1,57 @@
+{
+  "meal": {
+    "name": "Kanapka z pastą z twarożku z suszonymi pomidorami ",
+    "category_id": "c389774f-61b9-4c8b-8f45-cbc4ca251715",
+    "steps": [
+      {
+        "name": "Suszone pomidory zalać w szklance wrzątkiem i odstawić na 10 – 15 min. Następnie odlać wodę i pokroić pomidory w kostkę "
+      },
+      {
+        "name": "Umyć świeżego pomidora i listki bazylii. Z pomidora usunąć szypułkę i pokroić miąższ w kostkę. Bazylię posiekać. "
+      },
+      {
+        "name": "Umyć świeżego pomidora i listki bazylii. Z pomidora usunąć szypułkę i pokroić miąższ w kostkę. Bazylię posiekać. "
+      }
+    ],
+    "ingredients": [
+      {
+        "name": "twaróg półtłusty",
+        "amount": "4",
+        "amount_type": "łyżki",
+        "alternative_amount": "100",
+        "alternative_amount_type": "gram"
+      },
+      {
+        "name": "jogurt naturalny",
+        "amount": "2",
+        "amount_type": "łyżki",
+        "alternative_amount": "50",
+        "alternative_amount_type": "gram"
+      },
+      {
+        "name": "pestki dynii",
+        "amount": "1",
+        "amount_type": "łyżka",
+        "alternative_amount": "10",
+        "alternative_amount_type": "gram"
+      },
+      {
+        "name": "pomidor",
+        "amount": "1",
+        "amount_type": "sztuka",
+        "alternative_amount": "120",
+        "alternative_amount_type": "gram"
+      },
+      {
+        "name": "suszone pomidory",
+        "amount": "2",
+        "amount_type": "sztuki"
+      },
+      {
+        "name": "swieża bazylia",
+        "amount": "2",
+        "amount_type": "listki"
+      }
+    ]
+  }
+}
