@@ -1,6 +1,9 @@
-# dieter-frontend
+# Dieter - Manage your food recipes
+[![Netlify Status](https://api.netlify.com/api/v1/badges/138fc068-bf40-466c-8ca1-4c393d029608/deploy-status)](https://app.netlify.com/sites/agitated-villani-0c88c0/deploys)
 
-## Project setup
+## Overview
+
+## Setup
 ```
 npm install
 ```
@@ -19,6 +22,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
