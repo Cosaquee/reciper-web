@@ -17,8 +17,12 @@
           <li v-if="isLoggedIn">
             <router-link to="/breakfast" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Breakfast</router-link>
           </li>
-          <li v-if="isLoggedIn"><router-link to="/snack" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Snack</router-link></li>
-          <li v-if="isLoggedIn"><router-link to="/dinner" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Dinner</router-link></li>
+          <li v-if="isLoggedIn">
+            <router-link to="/snack" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Snack</router-link>
+          </li>
+          <li v-if="isLoggedIn">
+            <router-link to="/dinner" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Dinner</router-link>
+          </li>
           <li v-if="isLoggedIn">
             <router-link to="/supper" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2"
               >Supper</router-link

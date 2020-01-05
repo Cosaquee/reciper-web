@@ -1,7 +1,7 @@
 <template>
-  <div class="md:w-1/2 mx-auto ml-auto">
+  <div class="xl:w-1/2 mr-auto ml-auto">
     <h1 class="text-4xl mt-8 mb-4 text-center">{{ meal.name }}</h1>
-    <section class="flex sm:ml-16 mb-4 justify-center">
+    <section class="flex sm:ml-16 mb-4 justify-center text-center">
       <span class="flex inline-block bg-white rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 items-center">
         Vegetables
         <svg v-if="meal.vegetables" class="h-4 w-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 507.2 507.2">
@@ -49,19 +49,19 @@
       </span>
     </section>
     <section>
-      <h2 class="text-2xl ml-16 mb-2">Ingredients</h2>
+      <h2 class="text-2xl ml-16 mb-2">Ingredients:</h2>
       <div class="ml-16">
-        <li v-for="(ingredient, index) in meal.ingredients" :key="index" class="text-lg">
+        <li v-for="(ingredient, index) in meal.ingredients" :key="index">
           {{ ingredient.amount }} {{ ingredient.amount_type }} {{ ingredient.name }} {{ ingredient.alternative_amount }}
           {{ ingredient.alternative_amount_type }}
         </li>
       </div>
     </section>
     <section>
-      <h2 class="text-2xl ml-16 mt-2">Steps</h2>
+      <h2 class="text-2xl ml-16 mt-2">Steps:</h2>
       <div class="ml-16">
         <ul class="list-decimal list-inside">
-          <li v-for="(step, index) in meal.steps" :key="index" class="text-lg">
+          <li v-for="(step, index) in meal.steps" :key="index">
             {{ step.name }}
           </li>
         </ul>
