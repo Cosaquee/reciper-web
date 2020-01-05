@@ -36,30 +36,24 @@
             Submit
           </button>
         </div>
-        <div class="flex ml-4 text-gray-600">
-          <div>
-            <input class="mr-2 leading-tight rounded" type="checkbox" v-model="vegetables" />
-            <span class="text-sm mr-2">
-              Vegetables
-            </span>
+        <div class="flex ml-5  text-gray-600">
+          <div class="flex justify-center items-center">
+            <input class="leading-tight rounded" type="checkbox" v-model="vegetables" />
+            <span class="text-sm ml-1 mr-2">Vegetables</span>
           </div>
-          <div>
-            <input class="mr-2 leading-tight" type="checkbox" v-model="vegetarian" />
-            <span class="text-sm mr-2">
-              Vegetarian
-            </span>
+          <div class="flex justify-center items-center">
+            <input class="leading-tight" type="checkbox" v-model="vegetarian" />
+            <span class="text-sm ml-1 mr-2">Vegetarian</span>
           </div>
-          <div>
-            <input class="mr-2 leading-tight" type="checkbox" v-model="vegan" />
-            <span class="text-sm mr-2">
-              Vegan
-            </span>
+          <div class="flex justify-center items-center">
+            <input class="leading-tight" type="checkbox" v-model="vegan" />
+            <span class="text-sm ml-1 mr-2">Vegan</span>
           </div>
         </div>
         <div>
           <h2 class="text-2xl ml-4">Ingredients</h2>
           <div v-for="(ingredient, index) in ingredients" :key="index">
-            <div class="sm:flex lg:flex items-center">
+            <div class="ml-4 sm:flex lg:flex items-center">
               <h1 class="text-xl text-orange-400">{{ index }}</h1>
               <input
                 class="shadow appearance-none border border-orange-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline m-1"
@@ -111,7 +105,7 @@
         <div>
           <h2 class="text-2xl ml-4">Steps</h2>
           <div v-for="(step, index) in steps" :key="index">
-            <div class="sm:flex lg:flex items-center">
+            <div class="ml-4 sm:flex lg:flex items-center">
               <h1 class="text-xl text-orange-400">{{ index }}</h1>
               <input
                 class="shadow appearance-none border border-orange-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline m-1"

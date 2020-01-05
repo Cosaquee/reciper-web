@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Breakfast from '../views/Breakfast.vue';
 import Snack from '../views/meals/Snack.vue';
+import Dinner from '../views/meals/Dinner.vue';
 
 import NewMeal from '../views/NewMeal.vue';
 import Meal from '../views/Meal.vue';
@@ -29,6 +30,14 @@ const routes = [
     path: '/snack',
     name: 'snack',
     component: Snack,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/dinner',
+    name: 'dinner',
+    component: Dinner,
     meta: {
       requiresAuth: true
     }
