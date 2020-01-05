@@ -36,7 +36,6 @@ const actions = {
 
       return response;
     } catch (error) {
-      console.log('Error in login actions', error.response)
       commit('auth_failure', { error: error });
     }
   },

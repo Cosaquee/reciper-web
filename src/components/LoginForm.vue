@@ -61,7 +61,7 @@ export default {
         await this.$store.dispatch('loading');
         return this.$router.push('/breakfast');
       } catch (error) {
-        console.log(JSON.stringify(error));
+        throw new Error(error);
       }
     }
   }
