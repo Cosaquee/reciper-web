@@ -31,7 +31,7 @@ const actions = {
 
       return data.data.data;
     } catch (error) {
-      throw new Error(error);
+      return error;
     }
   },
   async fetchMeals(state, { type }) {
@@ -44,7 +44,7 @@ const actions = {
 
       return data.data.data;
     } catch (error) {
-      throw new Error(error);
+      return error;
     }
   },
   async fetchMealDetails(state, { id }) {
@@ -57,7 +57,7 @@ const actions = {
 
       return data.data.data;
     } catch (error) {
-      throw new Error(error);
+      return error;
     }
   }
 };

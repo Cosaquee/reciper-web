@@ -14,12 +14,12 @@
     <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
       <nav>
         <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-          <li>
+          <li v-if="isLoggedIn">
             <router-link to="/breakfast" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Breakfast</router-link>
           </li>
-          <li><router-link to="/snack" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Snack</router-link></li>
-          <li><router-link to="/dinner" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Dinner</router-link></li>
-          <li>
+          <li v-if="isLoggedIn"><router-link to="/snack" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Snack</router-link></li>
+          <li v-if="isLoggedIn"><router-link to="/dinner" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Dinner</router-link></li>
+          <li v-if="isLoggedIn">
             <router-link to="/supper" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2"
               >Supper</router-link
             >

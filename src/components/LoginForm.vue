@@ -56,12 +56,12 @@ export default {
   methods: {
     async login() {
       try {
-        this.$store.dispatch('loading');
+        await this.$store.dispatch('loading');
         await this.$store.dispatch('login', { email: this.email, password: this.password });
-        this.$store.dispatch('loading');
-        this.$router.push('/breakfast');
+        await this.$store.dispatch('loading');
+        return this.$router.push('/breakfast');
       } catch (error) {
-        throw new Error(error);
+        console.log(JSON.stringify(error));
       }
     }
   }
